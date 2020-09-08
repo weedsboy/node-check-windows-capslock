@@ -1,11 +1,9 @@
 ﻿#include <napi.h>
-#include "electron-share-memory.h"
+#include "node-check-windows-capslock.h"
 
 Napi::Object Init(Napi::Env env, Napi::Object exports) {
-  exports.Set(Napi::String::New(env, "SetShareMemory"), Napi::Function::New(env, SetShareMemory));
-  exports.Set(Napi::String::New(env, "GetShareMemory"), Napi::Function::New(env, GetShareMemory));
-  exports.Set(Napi::String::New(env, "ClearShareMemory"), Napi::Function::New(env, ClearShareMemory));
+  exports.Set(Napi::String::New(env, "IsCapslockOpen"), Napi::Function::New(env, IsCapslockOpen));
   return exports;
 }
 
-NODE_API_MODULE(electron_share_memory, Init)
+NODE_API_MODULE(node_check_windows_capslock, Init)
