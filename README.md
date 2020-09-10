@@ -10,7 +10,7 @@ Only works on windows.
 const check = require('node-check-windows-capslock')
 
 //check capslock, return true/false
-let result = check.IsCapslockOpen(name, maxSize, dataSize, data)
+let result = check.IsCapslockOpen()
 
 ```
 
