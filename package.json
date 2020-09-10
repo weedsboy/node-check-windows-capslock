@@ -1,6 +1,6 @@
 {
   "name": "node-check-windows-capslock",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Check windows capslock.",
   "main": "lib/index.js",
   "scripts": {
